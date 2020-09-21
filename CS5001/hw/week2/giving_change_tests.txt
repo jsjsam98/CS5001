@@ -1,0 +1,52 @@
+Enter total cost of purchase: 99.99
+Enter amount paid: 100
+Change to be given:  0.01
+1 penny
+
+Enter total cost of purchase: 99.9
+Enter amount paid: 100
+Change to be given:  0.1
+1 dime
+
+Enter total cost of purchase: 89.55
+Enter amount paid: 100
+Change to be given:  10.45
+1 ten
+1 quarter
+2 dimes
+
+Enter total cost of purchase: 11.11
+Enter amount paid: 100
+Change to be given:  88.89
+4 twenties
+1 five
+3 ones
+3 quarters
+1 dime
+4 pennies
+
+Enter total cost of purchase: 63.59
+Enter amount paid: 100
+Change to be given:  36.41
+1 twenty
+1 ten
+1 five
+1 one
+1 quarter
+1 dime
+1 nickel
+1 penny
+
+Enter total cost of purchase: 100.1
+Enter amount paid: 100
+Did not receive enough cash from the customer.
+
+Enter total cost of purchase: 3.77
+Enter amount paid: 18.5
+Change to be given:  14.73
+1 ten
+4 ones
+2 quarters
+2 dimes
+3 pennies
+
