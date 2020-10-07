@@ -1,4 +1,3 @@
-
 def distance(value, from_units, to_units):
 
     if from_units == 'cm':
@@ -18,7 +17,7 @@ def distance(value, from_units, to_units):
     else:
         print('ERROR: cannot convert {} {} to {}'.format(
             value, from_units, to_units))
-        return -1
+        return float(-1)
 
     if to_units == 'cm':
         c_value = c_value*100
@@ -37,9 +36,9 @@ def distance(value, from_units, to_units):
     else:
         print('ERROR: cannot convert {} {} to {}'.format(
             value, from_units, to_units))
-        return -1
+        return float(-1)
 
-    print(value, from_units, '=', c_value, to_units)
+    print(value, from_units, 'is equal to', c_value, to_units)
     return c_value
 
 
@@ -56,7 +55,7 @@ def volume(value, from_units, to_units):
     else:
         print('ERROR: cannot convert {} {} to {}'.format(
             value, from_units, to_units))
-        return -1
+        return float(-1)
 
     if to_units == 'l':
         c_value = c_value
@@ -69,9 +68,9 @@ def volume(value, from_units, to_units):
     else:
         print('ERROR: cannot convert {} {} to {}'.format(
             value, from_units, to_units))
-        return -1
+        return float(-1)
 
-    print(value, from_units, '=', c_value, to_units)
+    print(value, from_units, 'is equal to', c_value, to_units)
     return c_value
 
 
@@ -90,7 +89,9 @@ def weight(value, from_units, to_units):
     elif from_units == 'st':
         c_value = value/0.0714285714
     else:
-        return -1
+        print('ERROR: cannot convert {} {} to {}'.format(
+            value, from_units, to_units))
+        return float(-1)
 
     if to_units == 'lb':
         c_value = c_value
@@ -107,9 +108,9 @@ def weight(value, from_units, to_units):
     else:
         print('ERROR: cannot convert {} {} to {}'.format(
             value, from_units, to_units))
-        return -1
+        return float(-1)
 
-    print(value, from_units, '=', c_value, to_units)
+    print(value, from_units, 'is equal to', c_value, to_units)
     return c_value
 
 
@@ -119,14 +120,14 @@ def temperature(value, from_units, to_units):
         c_value = value
     else:
         if from_units == 'F' and to_units == 'C':
-            c_value = value*(9/5)+32
-        elif from_units == 'C' and to_units == 'F':
             c_value = (value-32)*(5/9)
+        elif from_units == 'C' and to_units == 'F':
+            c_value = value*(9/5)+32
         else:
             print('ERROR: cannot convert {} {} to {}'.format(
                 value, from_units, to_units))
-            return -1
-    print(value, from_units, '=', c_value, to_units)
+            return float(-1)
+    print(value, from_units, 'is equal to', c_value, to_units)
     return c_value
 
 
