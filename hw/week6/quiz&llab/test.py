@@ -1,0 +1,1 @@
+print('abcdefghijk'[0:4])
